@@ -11,6 +11,9 @@
     
 
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@9.1.1/swiper-bundle.min.css">
+
     <link rel="stylesheet" href="./css/style.css">
   </head>
 
@@ -19,7 +22,7 @@
       <div class="container header-container">
         <nav class="navigation">
           <a class="logo" href="./index.html">
-            <img src="/images/logo.svg" alt="Адвокат Пех Максим Валерійович">
+            <img src="/images/logo.svg" alt="Пех & Партнери">
             <h2 class="logo-title">Пех & Партнери</h2>
           </a>
 
@@ -128,7 +131,7 @@
         </div>
       </section>
 
-      <section class="main-services section" id="services">
+      <!-- <section class="main-services section" id="services">
         <div class="main-services container">
           <h2 class="vissually-hidden"></h2>
           <ul class="main-contant-list list">
@@ -170,7 +173,45 @@
             </li>
           </ul>
         </div>
+      </section> -->
+      
+      <section class="main-services section" id="services">
+        <div class="container">
+          <h2 class="visually-hidden">Наші послуги</h2>
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="main-icon-box">
+                  <h3 class="list-item-heading">Сімейне право</h3>
+                  <p class="list-item-description">Чесне та компетентне представництво в сімейних спорах</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="main-icon-box">
+                  <h3 class="list-item-heading">Господарське право</h3>
+                  <p class="list-item-description">Вирішення господарських конфліктів...</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="main-icon-box">
+                  <h3 class="list-item-heading">Стягнення заборгованостей</h3>
+                  <p class="list-item-description">Ефективне стягнення боргів через...</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="main-icon-box">
+                  <h3 class="list-item-heading">ДТП</h3>
+                  <p class="list-item-description">Кваліфікована допомога в справах ДТП...</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
       </section>
+      
+      
+      
       <section class="sign-up section" id="contacts">
         <div class="sign-up-container container">
           <div class="sign-up-content">
@@ -186,6 +227,22 @@
             </p>
           </div>
 
+          <!-- <div class="">
+            <ul class="contact-info-list">
+              <li class="contact-info-list-item">
+                <p class="info-title">Адреса</p>
+              </li>
+              <li class="contact-info-list-item"><p class="info-title">Графік</p></li>
+              <li class="contact-info-list-item"><p class="info-title">Контакти</p></li>
+            </ul>
+            <ul class="contact-info-list">
+              <li class="contact-info-list-item"><p class="info-desc">вулиця Шевченка, 241, Львів, Україна.</p></li>
+              <li class="contact-info-list-item"><p class="info-desc">Понеділок - Субота: 11:00 - 21:00</p></li>
+              <li class="contact-info-list-item"> <a href="mailto:alenamaliushchenko@email.com">alenamaliushchenko@email.com</a></li>
+            </ul>
+
+
+          </div> -->
             <ul class="contact-info-list">
               <li class="contact-info-list-item">
                 <p class="info-title">Адреса</p>
@@ -262,11 +319,16 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-logo">
-          <a class="logo" href="./index.html">Адвокат Пех Максим Валерійович</a>
+          <a class="logo" href="./index.html">
+            <img src="/images/logo.svg" alt="Пех & Партнери">
+            <h2 class="logo-title">Пех & Партнери</h2>
+          </a>
           <p class="footer-description">
             Забезпечте собі впевненість у перемозі: наші юристи будуть поруч з
             вами на всіх етапах юридичного процесу.
           </p>
+        </div>
+        <!-- <div class="footer-contacts">  
           <address class="footer-contacts">
             <a class="footer-contacts-link" href="tel:+380938851725"
               >+38 093 885 1725</a
@@ -278,7 +340,7 @@
               >Україна, Львів</a
             >
           </address>
-        </div>
+        </div> -->
         <div class="social-network">
           <ul class="social-menu-list list">
             <li class="social-menu-items">
@@ -300,6 +362,9 @@
       </div>
     </footer>
 
+
     <script type="module" src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
   </body>
 </html>

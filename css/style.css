@@ -17,6 +17,7 @@ body {
   font-family: var(--font-family);
   color: #828282;
   background-color: #FFF;
+   overflow-x: hidden;
 }
 h1,
 h2,
@@ -511,6 +512,91 @@ button {
   }
 }
 
+/* Загальні стилі для секції послуг */
+.main-services {
+  background-color: #fff; /* Білий фон для кожної секції */
+  padding: 50px 0;
+}
+
+.main-services .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.list-item-heading {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.list-item-description {
+  font-size: 16px;
+  color: #555;
+}
+
+.main-icon-box {
+  text-align: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Стилі для Swiper */
+.main-services {
+  background-color: #fff;
+  padding: 60px 0;
+}
+
+.swiper {
+  padding-bottom: 40px;
+}
+
+.swiper-slide {
+  background: #f3f6f9;
+  border-radius: 12px;
+  padding: 30px 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.swiper-slide:hover {
+  transform: translateY(-5px);
+}
+
+.main-icon-box {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.list-item-heading {
+  font-size: 20px;
+  font-weight: bold;
+  color: #1d5254;
+}
+
+.list-item-description {
+  font-size: 16px;
+  color: #333;
+}
+
+
+@media (max-width: 768px) {
+  .main-icon-box {
+    padding: 15px;
+  }
+
+  .list-item-heading {
+    font-size: 20px;
+  }
+
+  .list-item-description {
+    font-size: 14px;
+  }
+}
+
+
 .sign-up {
   padding: 60px 0;
   background-image: linear-gradient(
@@ -550,10 +636,18 @@ button {
   line-height: 160%;
   color: #e1e1e1;
 }
+/* .contact-block {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+} */
 .contact-info-list {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   padding-top: 35px;
+  column-gap: 28px;
+  row-gap: 60px; 
 
 }
 .contact-info-list-item {
@@ -639,3 +733,94 @@ placeholder {
   color: #E0A178;
   text-decoration: underline;
 } */
+
+.footer {
+  background: linear-gradient(
+    to bottom,
+    #1d5254 0%,
+    #4a5a5b 50%,
+    #b0b0b0 100%
+  );
+  color: white; 
+  padding: 40px 0; 
+  font-family: Arial, sans-serif;
+}
+
+.footer .container {
+  max-width: 1200px; /* Максимальна ширина контейнера */
+  margin: 0 auto; 
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 90px; 
+  flex-wrap: wrap;
+}
+
+.footer-logo .logo {
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #ecf0f1;
+}
+
+
+/* .footer-contacts-link {
+  display: block;
+  color: #ecf0f1;
+  font-size: 14px;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+.footer-contacts-link:hover {
+  color: #1A4B4C;
+} */
+
+.footer-description {
+  max-width: 400px;
+  font-size: 16px;
+  color: #e0e0e0;
+  flex: 1;
+  text-align: left;
+}
+ 
+
+/* Соціальні мережі */
+.social-network {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.social-menu-list {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.social-menu-items {
+  margin-left: 20px;
+}
+
+.social-link {
+  display: block;
+}
+
+.social-icon {
+  width: 24px;
+  height: 24px;
+  fill: #E0A178;
+}
+
+.social-link:hover .social-icon {
+  fill: #3498db; /* Колір іконки при наведенні */
+}
