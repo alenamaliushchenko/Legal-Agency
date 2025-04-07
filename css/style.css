@@ -10,7 +10,9 @@
   --second-family: "Cormorant Garamond", sans-serif;
   --third-family: "Segoe UI", sans-serif;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: var(--font-family);
   color: #828282;
@@ -28,7 +30,6 @@ h6 {
 }
 p {
   margin: 0;
-  text-align: center;
 }
 ul,
 ol {
@@ -78,7 +79,6 @@ button {
   padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
-  /* border: 2px solid red; */
 }
 
 
@@ -215,16 +215,46 @@ button {
   }
 }
 
-.hero-service {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  height: 80vh;
-  background-image: linear-gradient(rgba(50, 50, 50, 0.8), rgba(50, 50, 50, 0.8)), url('/images/hero-bg-tablet.webp');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+/* hero-service section */
 
+.hero-service {
+  position: relative;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url('../images/freepik__upload__38616.jpg');
+  background-size: cover;
+  background-position: center; 
+  background-attachment: fixed; 
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh; 
+  color: #fff;
+  display: flex; 
+  align-items: flex-start; 
+  justify-content: center;
+  flex-direction: column;
+}
+.hero-service::before,
+.hero-service::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 15%; /* Ширина градієнта з кожного боку */
+  height: 100%;
+  z-index: 1;
+}
+
+.hero-service::before {
+  left: 0;
+  background: linear-gradient(to right, rgba(128, 128, 128, 1), rgba(128, 128, 128, 0));
+}
+
+.hero-service::after {
+  right: 0;
+  background: linear-gradient(to left, rgba(128, 128, 128, 1), rgba(128, 128, 128, 0));
+}
+
+.hero-service > * {
+  position: relative;
+  z-index: 2;
 }
 
 .hero-title {
@@ -233,9 +263,11 @@ button {
   font-size: 58px;
   line-height: 140%;
   color: #fff;
-  margin-bottom: 20px;
+  padding-bottom: 20px;
+
 }
 .hero-description {
+  position: relative;
   font-family: var(--second-family);
   font-size: 20px;
   color: #fff;
@@ -244,9 +276,9 @@ button {
   
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .hero-service {
+  /* .hero-service {
     background-image: linear-gradient(rgba(50, 50, 50, 0.8), rgba(50, 50, 50, 0.8)), url('/images/hero-bg-tablet.webp');
-  }
+  } */
   .hero-title {
     font-size: 70px;
   }
@@ -256,9 +288,9 @@ button {
 }
   
 @media only screen and (min-width: 1025px) {
-  .hero-service {
-    background-image:  linear-gradient(rgba(50, 50, 50, 0.8), rgba(50, 50, 50, 0.8)), url('/images/hero-bg-desktop.webp');
-  }
+  /* .hero-service {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url('../images/istockphoto-1139699597-612x612.jpg');
+  } */
   .hero-title {
     font-size: 82px;
   }
@@ -358,7 +390,7 @@ button {
 
 .our-advantages {
   padding: 60px 0;
-  background-color: #252424;
+  background-color: rgba(25, 85, 81, 0.9);
   text-align: center;
 }
 .our-advantages-container {
@@ -368,11 +400,12 @@ button {
 
 .our-advantages-title {
   font-family: var(--second-family);
-  font-weight: 500;
+  font-weight: 600;
   font-size: 58px;
-  line-height: 140%;
+  line-height: 100%;
   color: #fff;
-  margin-bottom: 20px;
+  text-align: center;
+  padding-bottom: 35px;
 }
 .our-advantages-list {
   display: flex;
@@ -383,11 +416,12 @@ button {
   margin: 0;
 }
 .our-advantages-item {
-  background: #737373;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-  text-align: left;
+  font-family: var(--font-family);
+  background-color: #195551;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: #f2f2ef;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .our-advantage-item:hover {
@@ -398,17 +432,18 @@ button {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  /* color: #f2f2ef; */
 }
 .our-advantage-subtitle {
   font-size: 20px;
   font-weight: 600;
-  color: #fff;
+  /* color: #f2f2ef; */
   margin-bottom: 10px;
 }
 
 .our-advantage-description {
   font-size: 16px;
-  color: #fff;
+  
 }
  
 @media screen and (min-width: 768px) {
@@ -449,7 +484,8 @@ button {
   }
 
   .our-advantages-title {
-    font-size: 36px;
+    font-size: 60px;
+    padding-bottom: 45px;
   }
 
   .our-advantages-list {
@@ -477,15 +513,29 @@ button {
 
 .sign-up {
   padding: 60px 0;
-  background-color: rgba(25, 85, 81, 0.9);
-  text-align: center;
+  background-image: linear-gradient(
+      rgba(25, 85, 81, 0.9),
+      rgba(25, 85, 81, 0.9)
+    ),
+    url(../images/top-view-from-city.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
 }
 .sign-up-container {
-  max-width: 100%;
+  max-width: 1200px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
 }
-/* .sign-up-content {
-} */
+.sign-up-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
 .sign-up-title {
   font-family: var(--second-family);
   font-weight: 600;
@@ -500,14 +550,41 @@ button {
   line-height: 160%;
   color: #e1e1e1;
 }
+.contact-info-list {
+  display: flex;
+  flex-direction: column;
+  padding-top: 35px;
+
+}
+.contact-info-list-item {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  column-gap: 28px;
+  row-gap: 60px;
+}
+.info-title {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 150%;
+  color: #e0a178;
+}
+.info-desc {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: #e1e1e1;
+}
 .sign-up-form {
   display: flex;
   flex-direction: column;
-  gap: 12px;
-  width: 100%;
-  max-width: 400px;
+  gap: 24px;
+  width: 50%;
   margin: 0 auto;
   background-color: #1A4B4C;
+  padding: 82px 100px 70px 100px;
   
 }
 /* .form {
@@ -517,7 +594,8 @@ button {
 .form-field {
   border: none;
   border-bottom: 2px solid #e5926e;
-  width: 100%;
+  width: 370px;
+  /* width: 100%; */
   padding: 12px;
   border-radius: 6px;
   font-size: 14px;
@@ -531,16 +609,17 @@ placeholder {
 }
 .form-btn {
   /* display: inline-block; */
-  width: 140px;
-  height: 40px;
-  padding: 10px 20px;
-  font-size: 16px;
-  font-weight: 600;
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 125%;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
   text-align: center;
   color: #fff;
+  padding: 10px 10px;
   background-color: #E0A178;
   border: none;
-  border-radius: 6px;
   cursor: pointer;
   transition: background-color 0.3s ease;
   margin: 0 auto;

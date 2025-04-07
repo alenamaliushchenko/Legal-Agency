@@ -7,8 +7,8 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@500;600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@500;600;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    
 
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./css/style.css">
@@ -34,20 +34,18 @@
               <a class="menu-link menu-link" href="./index.html">Головна</a>
             </li>
             <li class="menu-item">
-              <a class="menu-link menu-link" href="./index.html">Про нас</a>
+              <a class="menu-link menu-link" href="#about-us">Про нас</a>
             </li>
             <li class="menu-item">
-              <a class="menu-link menu-link" href="./index.html"
-                >Наші переваги</a
-              >
+              <a class="menu-link menu-link" href="#advantages"
+                >Наші переваги</a>
             </li>
             <li class="menu-item">
-              <a class="menu-link menu-link" href="./index.html"
-                >Наші послуги</a
-              >
+              <a class="menu-link menu-link" href="#services"
+                >Наші послуги</a>
             </li>
             <li class="menu-item">
-              <a class="menu-link menu-link" href="./index.html">Контакти</a>
+              <a class="menu-link menu-link" href="#contacts">Контакти</a>
             </li>
           </ul>
         </nav>
@@ -64,7 +62,7 @@
           </p>
         </div>
       </section>
-      <section class="about-us section">
+      <section class="about-us section" id="about-us">
         <div class="about-us-container container">
           <div class="about-us-img">
             <img src="./images/lawer-photo-mobile.webp" alt="Адвокат" width="500px">
@@ -72,32 +70,46 @@
           <div class="about-us-content">
             <h2 class="about-us-title">Про нас</h2>
             <p class="about-us-description">
-              Aдвокат з понад 15-річним досвідом в галузі сімейного та
-              господарського права, а також успішною практикою у вирішенні
-              стягнення по борговим заборгованостям та ДТП. Маємо значний досвід у
-              представництві клієнтів в різних судових інстанціях, вирішуючи
-              складні справи.
+              Ми — команда професіоналів, яку очолює Пех Максим Валерійович,
+              адвокат з понад 15-річним досвідом у галузі сімейного та господарського права,
+              а також у вирішенні справ із борговими заборгованостями та ДТП.
+              Маю успішну практику представництва клієнтів у судових інстанціях, допомагаючи вирішувати складні правові питання.
+
+              Спеціалізуюсь на вирішенні проблемної заборгованості, допомагаючи компаніям та 
+              кредиторам ефективно стягувати борги будь-якої складності.
+              Мій підхід полягає в том, щоб не тільки вирішувати проблеми, 
+              але й уникати їх у майбутньому. Я проводжу комплексний аналіз вашої ситуації, 
+              враховуючи всі можливі аспекти, ризики, і розроблю стратегію, яка захистить ваші інтереси та 
+              забезпечить максимальну ефективність.
+
             </p>
           </div>
         </div>  
       </section>
-      <section class="our-advantages section">
+
+      <section class="our-advantages section" id="advantages">
         <div class="our-advantages-container container">
           <h2 class="our-advantages-title">Наші переваги</h2>
           <ul class="our-advantages-list">
             <li class="our-advantages-item">
               <div class="our-advantage-box">
-                <h4 class="our-advantage-subtitle">Професійна Надійність</h4>
+                <h4 class="our-advantage-subtitle">Глибока Експертиз</h4>
                 <p class="our-advantage-description">
-                  Доказаний досвід та високий рівень професійності.
+                  Досвід у сфері сімейного, господарського права та стягнення заборгованості.
+                </p>
+                <p class="our-advantage-description">
+                  Знаємо всі тонкощі судової практики, тому діємо впевнено та ефективно.
                 </p>
               </div>
             </li>
             <li class="our-advantages-item">
               <div class="our-advantage-box">
-                <h4 class="our-advantage-subtitle">Особистий Підхід</h4>
+                <h4 class="our-advantage-subtitle">Індивідуальний Підхі</h4>
                 <p class="our-advantage-description">
-                  Ваші індивідуальні потреби є нашим пріоритетом.
+                  Кожен клієнт — унікальний, тому ми розробляємо рішення, адаптовані саме до вашої ситуації.
+                </p>
+                <p class="our-advantage-description">
+                  Постійний супровід, прозорість процесів та зрозуміла комунікація.
                 </p>
               </div>
             </li>
@@ -105,19 +117,18 @@
               <div class="our-advantage-box">
                 <h4 class="our-advantage-subtitle">Ефективність</h4>
                 <p class="our-advantage-description">
-                  Рішення справ швидко та ефективно.
+                  Ми орієнтуємося не на процес, а на результат — вирішення вашої проблеми.
+                </p>
+                <p class="our-advantage-description">
+                  Багаторічна практика доводить: ми досягаємо потрібного клієнту рішення.
                 </p>
               </div>
             </li>
           </ul>
-
-          <!-- <p class="our-advantages-description">
-            Нехай наш досвід стане вашою вигодою в рішенні юридичних питань.
-            Звертайтеся, і ми разом досягнемо успішного вирішення вашої справи.
-          </p> -->
         </div>
       </section>
-      <section class="main-services section">
+
+      <section class="main-services section" id="services">
         <div class="main-services container">
           <h2 class="vissually-hidden"></h2>
           <ul class="main-contant-list list">
@@ -160,71 +171,90 @@
           </ul>
         </div>
       </section>
-      <section class="sign-up section">
+      <section class="sign-up section" id="contacts">
         <div class="sign-up-container container">
           <div class="sign-up-content">
             <h2 class="sign-up-title">Контакти</h2>
-            <p class="sign-up-description">
+            <div class="sign-up-description">
+            <p>
               Якщо вам потрібно звернутися до суду або вирішити проблему в досудовому порядку,
-              зв'яжіться з нами! Ви можете зателефонувати або скористатися формою нижче. 
-              Введіть своє ім’я, електронну адресу та повідомлення – і ми незабаром відповімо вам
+              зв'яжіться з нами! 
             </p>
-            <form action="#" class="sign-up-form form">
-              <div class="sign-up-wrapper">
-                <input
-                  class="form-field"
-                  type="text"
-                  id="user-name"
-                  name="user-name"
-                  placeholder="Ваше ім'я"
-                  required
-                  pattern="[A-Za-zА-Яа-яЁёІіЇїЄє\s\-]+"
-                />
-              </div>
-              <div class="sign-up-wrapper">
-                <input 
-                class="form-field"
-                type="tel" 
-                id="user-phone"
-                name="user-phone"
-                placeholder="Ваш телефон" 
-                required
-                pattern="\+?[0-9\s\-\(\)]{10,15}"
-                />
-              </div>
-              <div class="sign-up-wrapper">
-                <input
-                  class="form-field"
-                  type="email"
-                  id="user-email"
-                  name="user-email"
-                  placeholder="Ваша електронна пошта"
-                  required
-                  pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
-                />
-              </div>
-              <div class="sign-up-wrapper">
-                <textarea
-                  class="form-field"
-                  id="user-message"
-                  maxlength="255"
-                  placeholder="Опишіть вашу ситуацію"
-                  required
-                ></textarea>
-              </div>
-              <button class="form-btn" type="submit">
-                <span class="send">Відправити</span>
-              </button>
-              <p class="privacy-policy">
-                By clicking on “Send” button, you agree to our
-                <a class="privacy-policy-link" href="/Privacy Policy"
-                  >Privacy Policy</a
-                >
-                , and allow Promodo to use this information for marketing
-                purposes.
-              </p>
-            </form>
+            <p>
+              Ви можете зателефонувати або скористатися формою нижче. 
+              І ми незабаром відповімо вам.
+            </p>
           </div>
+
+            <ul class="contact-info-list">
+              <li class="contact-info-list-item">
+                <p class="info-title">Адреса</p>
+                <p class="info-desc">вулиця Шевченка, 241, Львів, Україна.</p>
+              </li>
+              <li class="contact-info-list-item">
+                <p class="info-title">Графік</p>
+                <p class="info-desc">Понеділок - Субота: 11:00 - 21:00</p>
+              </li>
+              <li class="contact-info-list-item">
+                <p class="info-title">Контакти</p>
+                <p class="info-desc">
+                  <a href="tel:+380938851725">+38(093) 885 17 25</a> <br>
+                  <a href="mailto:alenamaliushchenko@email.com">alenamaliushchenko@email.com</a>
+                </p>
+              </li>
+            </ul>
+          </div>  
+          <form action="#" class="sign-up-form form">
+            <div class="sign-up-wrapper">
+              <input
+                class="form-field"
+                type="text"
+                id="user-name"
+                name="user-name"
+                placeholder="Ваше ім'я"
+                required
+                pattern="[A-Za-zА-Яа-яЁёІіЇїЄє\s\-]+"
+              />
+            </div>
+            <div class="sign-up-wrapper">
+              <input 
+              class="form-field"
+              type="tel" 
+              id="user-phone"
+              name="user-phone"
+              placeholder="Ваш телефон" 
+              required
+              pattern="\+?[0-9\s\-\(\)]{10,15}"
+              />
+            </div>
+            <div class="sign-up-wrapper">
+              <input
+                class="form-field"
+                type="email"
+                id="user-email"
+                name="user-email"
+                placeholder="Ваша електронна пошта"
+                required
+                pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+              />
+            </div>
+            <div class="sign-up-wrapper">
+              <textarea
+                class="form-field"
+                id="user-message"
+                maxlength="255"
+                placeholder="Опишіть вашу ситуацію"
+                required
+                style="resize: none;"
+              ></textarea>
+            </div>
+            <button class="form-btn" type="submit">
+              <span class="send">Відправити</span>
+            </button>
+            <p class="privacy-policy">
+              Натискаючи кнопку «Відправити», ви погоджуєтесь з нашою <a class="privacy-policy-link" href="/privacy-policy">Політикою конфіденційності.</a>
+            </p>            
+          </form>
         </div>
       </section>
     </main>
