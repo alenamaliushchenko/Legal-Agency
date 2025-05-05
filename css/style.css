@@ -100,9 +100,9 @@ button {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
   padding: 15px 20px;
   z-index: 1000;
+  width: 100vw;
 }
 .header.active {
   height: 100vh;
@@ -192,11 +192,16 @@ button {
   color: #E0A178;
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-
+  .header {
+    width: 100%;
+  }
 }
 
   
 @media only screen and (min-width: 1025px) {
+   .header {
+    width: 100%;
+  }
   .page-header {
     position: sticky;
     height: auto;
@@ -220,6 +225,7 @@ button {
 
 .hero-service {
   position: relative;
+  /* background-image: url('../images/hero-bg-mobile.webp'); */
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url('../images/freepik__upload__38616.jpg');
   background-size: cover;
   background-position: center; 
@@ -233,12 +239,12 @@ button {
   justify-content: center;
   flex-direction: column;
 }
-.hero-service::before,
+/* .hero-service::before,
 .hero-service::after {
   content: '';
   position: absolute;
   top: 0;
-  width: 15%; /* Ширина градієнта з кожного боку */
+  width: 15%; 
   height: 100%;
   z-index: 1;
 }
@@ -256,7 +262,7 @@ button {
 .hero-service > * {
   position: relative;
   z-index: 2;
-}
+} */
 
 .hero-title {
   font-family: var(--second-family);
